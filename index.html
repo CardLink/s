@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ниязбеков Нурлан Кенчимович</title>
+
+  <meta property="og:title" content="Ниязбеков Нурлан Кенчимович">
+  <meta property="og:description" content="Начальник управления ДПС и ПП ГУОБДД МВД Кыргызской Республики">
+  <meta property="og:image" content="https://cardlink.github.io/s/photo.jpeg">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Manrope', sans-serif;
+      background: radial-gradient(circle at top, #111, #000);
+      color: #fff;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 34px;
+      padding: 34px 24px 28px;
+
+      background: linear-gradient(180deg, #111111, #1a1a1a);
+      border: 1px solid rgba(255,255,255,0.06);
+
+      box-shadow:
+        0 24px 70px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+
+      text-align: center;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,0.08), transparent 40%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .card > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .mvd-bg {
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      opacity: 0.06;
+      filter: grayscale(100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+  padding: 10px 12px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 18px;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+    .badge {
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  background: linear-gradient(145deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.12);
+
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+  .top-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+
+  background: linear-gradient(145deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.14);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.10);
+
+  transition: all 0.25s ease;
+}
+.top-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: white;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.top-btn:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.12);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.6),
+    inset 0 1px 0 rgba(255,255,255,0.16);
+}
+
+.top-btn:active {
+  transform: scale(0.96);
+}
+
+.top-btn:active {
+  transform: scale(0.97);
+}
+
+    .photo-wrap {
+      width: 156px;
+      height: 156px;
+      margin: 0 auto 24px;
+      padding: 5px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #2a2a2a, #111);
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.08);
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 10px;
+    }
+
+    .role {
+      font-size: 15px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 26px;
+    }
+
+    .main-btn {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(180deg, #1f1f1f, #0f0f0f);
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+   .action {
+  min-height: 110px;
+  border-radius: 24px;
+  padding: 18px 12px;
+
+  background: linear-gradient(145deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.14);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+
+  text-decoration: none;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.12), transparent 60%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.action:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 16px 35px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+.action:hover::before {
+  opacity: 1;
+}
+
+.action:active {
+  transform: scale(0.98);
+}
+
+    .icon-svg {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 10px;
+
+  stroke: white;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.4));
+}
+
+    .label {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .qr {
+      display: none;
+      margin-top: 16px;
+    }
+
+    .qr img {
+      width: 110px;
+      height: 110px;
+      border-radius: 12px;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="logo.jpg" class="mvd-bg">
+
+    <div class="top-row">
+      <div class="badge">Премиальная цифровая визитка</div>
+
+      <div class="top-actions">
+     <button class="top-btn" onclick="sharePage()" aria-label="Поделиться">
+  <svg viewBox="0 0 24 24" class="top-icon">
+    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+    <path d="M16 6l-4-4-4 4"/>
+    <path d="M12 2v14"/>
+  </svg>
+</button>
+
+<button class="top-btn" onclick="toggleQR()" aria-label="QR код">
+  <svg viewBox="0 0 24 24" class="top-icon">
+    <path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3z"/>
+    <path d="M15 15h2v2h-2zM18 15h2v2h-2zM15 18h2v2h-2zM18 18h2v2h-2z"/>
+  </svg>
+</button>
+      </div>
+    </div>
+
+    <div class="photo-wrap">
+      <img src="photo.jpeg" class="photo">
+    </div>
+
+    <h1>Ниязбеков Нурлан<br>Кенчимович</h1>
+
+    <div class="role">Начальник управления ДПС и ПП ГУОБДД МВД Кыргызской Республики</div>
+
+    <a href="contact.vcf" class="main-btn">Сохранить контакт</a>
+
+   <div class="actions">
+  
+  <a href="tel:+996706251555" class="action">
+    <svg class="icon-svg" viewBox="0 0 24 24">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.62a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.46-1.29a2 2 0 0 1 2.11-.45c.84.3 1.72.51 2.62.63A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    <div class="label">Позвонить</div>
+  </a>
+
+  <a href="https://wa.me/996706251555?text=Здравствуйте,%20Нурлан%20Кенчимович" class="action" target="_blank">
+    <svg class="icon-svg" viewBox="0 0 24 24">
+      <path d="M21 11.5a8.5 8.5 0 0 1-13.2 7.1L3 20l1.4-4.2A8.5 8.5 0 1 1 21 11.5z"/>
+    </svg>
+    <div class="label">WhatsApp</div>
+  </a>
+
+  <a href="https://www.instagram.com/guobdd_kg/" class="action" target="_blank">
+    <svg class="icon-svg" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+    </svg>
+    <div class="label">Instagram</div>
+  </a>
+
+</div>
+
+    <div class="qr" id="qr">
+      <img id="qrImg">
+    </div>
+
+    <div class="footer">Быстрый доступ к контактам</div>
+  </div>
+
+  <script>
+    function sharePage() {
+      navigator.share?.({
+        title: document.title,
+        url: location.href
+      }) || alert(location.href);
+    }
+
+    function toggleQR() {
+      const qr = document.getElementById('qr');
+      const img = document.getElementById('qrImg');
+
+      img.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(location.href);
+
+      qr.style.display = qr.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
